@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teen Mental Health Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-content">
+            <a href="/" class="logo">
+                <span class="logo-icon">🌟</span>
+                <span class="logo-text">TeenMindMatters</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links">
+                <a href="#topics">Topics</a>
+                <a href="#resources">Resources</a>
+                <a href="#self-help">Self-Help Tools</a>
+                <a href="#emergency" class="emergency-link">Get Help Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Your Mental Health Matters</h1>
+            <p class="hero-subtitle">Understanding, supporting, and empowering teens through mental health education</p>
+            <div class="hero-cta">
+                <a href="#topics" class="primary-button">Learn More</a>
+                <a href="#emergency" class="secondary-button">Get Help</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="topics" class="topics-section">
+            <h2>Mental Health Topics</h2>
+            <div class="topic-grid">
+                <article  class="topic-card" data-topic="anxiety"  >
+                    <div class="topic-icon" >😰</div>
+                    <h3>Anxiety</h3>
+                    <p>Understanding anxiety and coping strategies</p>
+                    <button class="learn-more-btn">Learn More</button>
+                </article>
+                <article class="topic-card" data-topic="depression">
+                    <div class="topic-icon">😔</div>
+                    <h3>Depression</h3>
+                    <p>Recognizing signs and seeking help</p>
+                    <button class="learn-more-btn">Learn More</button>
+                </article>
+                <article class="topic-card" data-topic="stress">
+                    <div class="topic-icon">🎯</div>
+                    <h3>Stress Management</h3>
+                    <p>Healthy ways to handle stress</p>
+                    <button class="learn-more-btn">Learn More</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="self-help" class="tools-section">
+            <h2>Self-Help Tools</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <h3>Mood Tracker</h3>
+                    <div class="mood-tracker">
+                        <div class="mood-options">
+                            <button class="mood-btn" data-mood="great">😊</button>
+                            <button class="mood-btn" data-mood="good">🙂</button>
+                            <button class="mood-btn" data-mood="okay">😐</button>
+                            <button class="mood-btn" data-mood="bad">😔</button>
+                        </div>
+                        <div class="mood-log"></div>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <h3>Breathing Exercise</h3>
+                    <div class="breathing-exercise">
+                        <div class="breath-circle"></div>
+                        <p class="breath-text">Breathe in...</p>
+                        <button class="start-breathing">Start Exercise</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="resources-section">
+            <h2>Helpful Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3>For Teens</h3>
+                    <ul class="resource-list">
+                        <li>Understanding mental health</li>
+                        <li>Coping with school stress</li>
+                        <li>Building healthy relationships</li>
+                        <li>Managing social media</li>
+                    </ul>
+                </div>
+                <div class="resource-card">
+                    <h3>For Parents</h3>
+                    <ul class="resource-list">
+                        <li>Supporting your teen</li>
+                        <li>Recognizing warning signs</li>
+                        <li>Communication tips</li>
+                        <li>Finding professional help</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="emergency" class="emergency-section">
+            <h2>Need Help Now?</h2>
+            <div class="emergency-content">
+                <p>You're not alone. Help is available 24/7.</p>
+                <div class="emergency-contacts">
+                    <a href="tel:988" class="emergency-button">
+                        <span>📞</span> Call 988
+                    </a>
+                    <a href="sms:988" class="emergency-button">
+                        <span>💭</span> Text 988
+                    </a>
+                </div>
+                <p class="emergency-note">The 988 Suicide & Crisis Lifeline provides free, confidential support anytime.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#topics">Topics</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#self-help">Self-Help Tools</a></li>
+                    <li><a href="#emergency">Emergency Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Important Notice</h4>
+                <p class="footer-note">This website is for educational purposes only. Always seek professional help when needed.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="topicModal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+</body>
+</html>
